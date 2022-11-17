@@ -5,6 +5,10 @@
       "allowSyntheticDefaultImports": true,
       "baseUrl": ".",
       "paths": {
+        "~components": ["src/components"],
+        "~components/*": ["src/components/*"],
+        "~store/*": ["src/store/*"],
+        "~store": ["src/store"],
         "~src/*": ["src/*"]
       }
     }
