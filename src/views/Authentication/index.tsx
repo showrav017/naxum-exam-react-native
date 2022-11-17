@@ -3,6 +3,9 @@ import { useNavigation } from "@react-navigation/native";
 import { ThemeContext } from "styled-components/native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { View , Text} from "react-native";
+import { Container, Description, Title} from "./styles";
+import { KeyboardAvoidingView, Platform } from "react-native";
+import Button from "~components/Button";
 
 export const useCustomBottomInset = () => {
     const insets = useSafeAreaInsets();
@@ -29,11 +32,15 @@ const Authentication = () => {
     };
   
     return (
-      <View>
-        <Text>
-          Test
-        </Text>
-      </View>
+      <Container>
+      <KeyboardAvoidingView
+        behavior={Platform.OS === "ios" ? "padding" : null}
+        style={{ flexGrow: 1 }}
+      >
+        <Text style={{textAlign:"center"}}>Mass Destriction</Text>
+        <Button style={{width:100}}>Hi</Button>
+      </KeyboardAvoidingView>
+    </Container>
     );
   };
   

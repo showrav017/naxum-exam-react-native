@@ -11,13 +11,13 @@ export interface ContainerProps extends VariantProps, TouchableOpacityProps {
 }
 
 export const Container = styled.TouchableOpacity<ContainerProps>`
-  padding: 18px;
+  padding: 5px;
   border-radius: 15px;
   justify-content: center;
   align-items: center;
 
   overflow: hidden;
-  height: 68px;
+  height: 40px;
 
   border: 3px ${(props) => props.theme.colors.primary};
 

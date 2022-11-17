@@ -5,6 +5,7 @@ import Authentication from "./Authentication";
 
 import {
     createStackNavigator,
+    CardStyleInterpolators
   } from "@react-navigation/stack";
 import { RootStackParamList } from "~src/@types/react-navigation.d";
 import { SceneName } from "~src/@types/SceneName";
@@ -22,15 +23,15 @@ function Router() {
             headerShown: false,
             headerBackTitle: "Voltar",
             headerTitleAlign: "center",
-            //headerStyle: {
-            //  backgroundColor: theme.colors.background,
-            //},
-            //headerTitleStyle: {
-            //  fontFamily: theme.typography.fontFamily.bold,
-            //  fontSize: 20,
-            //  color: theme.colors.text,
-            //},
-            //cardStyleInterpolator: CardStyleInterpolators.forFadeFromCenter,
+            headerStyle: {
+             backgroundColor: theme.colors.background,
+            },
+            headerTitleStyle: {
+             fontFamily: theme.typography.fontFamily.bold,
+             fontSize: 20,
+             color: theme.colors.text,
+            },
+            cardStyleInterpolator: CardStyleInterpolators.forFadeFromCenter,
           }}
         >
           <Stack.Group>
