@@ -9,6 +9,7 @@ import {
   } from "@react-navigation/stack";
 import { RootStackParamList } from "~src/@types/react-navigation.d";
 import { SceneName } from "~src/@types/SceneName";
+import Home from "./Home";
 
 
 const Stack = createStackNavigator<RootStackParamList>();
@@ -34,6 +35,12 @@ function Router() {
             cardStyleInterpolator: CardStyleInterpolators.forFadeFromCenter,
           }}
         >
+            <Stack.Group>
+                <Stack.Screen name={SceneName.Home} component={Home} />
+                {/*<Stack.Screen name={SceneName.Profile} component={UserProfile} />
+                <Stack.Screen name={SceneName.AddContact} component={Chat} />
+                <Stack.Screen name={SceneName.Logout} component={Chat} />*/}
+            </Stack.Group>
           <Stack.Group>
             <Stack.Screen
               name={SceneName.Authentication}

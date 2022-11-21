@@ -1,3 +1,7 @@
 export enum SceneName {
-  Authentication = "Authentication"
+  Authentication = "Authentication",
+  Home = "Home",
+  AddContact = "AddContact",
+  Profile = "Profile",
+  Logout = "Logout"
 }

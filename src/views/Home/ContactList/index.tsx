@@ -14,7 +14,7 @@ export const useCustomBottomInset = () => {
 };
 
 
-const Authentication = () => {
+const ContactList = () => {
     const insets = useSafeAreaInsets();
     const bottomInset = useCustomBottomInset();
     const themeContext = useContext(ThemeContext);
@@ -38,29 +38,11 @@ const Authentication = () => {
         behavior={Platform.OS === "ios" ? "padding" : null}
         style={{ flexGrow: 1 }}
       >
-        <Text style={{textAlign:"center"}}>Login</Text>
-
-          <Input
-              returnKeyType="send"
-              autoCapitalize="none"
-              enablesReturnKeyAutomatically
-              blurOnSubmit={true}
-              placeholder="User Name"
-          />
-
-          <Input
-              returnKeyType="send"
-              autoCapitalize="none"
-              enablesReturnKeyAutomatically
-              blurOnSubmit={true}
-              placeholder="Password"
-          />
-
-        <Button style={{width:100}} onPress={handleLogin}>Do Login</Button>
+        <Text style={{textAlign:"center"}}>Contact List</Text>
       </KeyboardAvoidingView>
     </Container>
     );
   };
   
-  export default Authentication;
+  export default ContactList;
   

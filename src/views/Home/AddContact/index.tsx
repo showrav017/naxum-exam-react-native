@@ -14,7 +14,7 @@ export const useCustomBottomInset = () => {
 };
 
 
-const Authentication = () => {
+const AddContact = () => {
     const insets = useSafeAreaInsets();
     const bottomInset = useCustomBottomInset();
     const themeContext = useContext(ThemeContext);
@@ -38,7 +38,7 @@ const Authentication = () => {
         behavior={Platform.OS === "ios" ? "padding" : null}
         style={{ flexGrow: 1 }}
       >
-        <Text style={{textAlign:"center"}}>Login</Text>
+        <Text style={{textAlign:"center"}}>Add Contact</Text>
 
           <Input
               returnKeyType="send"
@@ -62,5 +62,5 @@ const Authentication = () => {
     );
   };
   
-  export default Authentication;
+  export default AddContact;
   

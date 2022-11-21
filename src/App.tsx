@@ -1,3 +1,4 @@
+import 'react-native-gesture-handler';
 import React, { useMemo } from "react";
 import { StatusBar } from 'expo-status-bar';
 import { registerRootComponent } from 'expo'; 

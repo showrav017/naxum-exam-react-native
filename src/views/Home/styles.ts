@@ -3,7 +3,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import Text from "~components/Text";
 
 export const Container = styled(SafeAreaView).attrs({
-  edges: ["left", "right", "top", "bottom"],
+    edges: ["left", "right", "top", "bottom"],
 })`
   flex: 1;
   padding: 40px;
@@ -14,16 +14,16 @@ export const Container = styled(SafeAreaView).attrs({
 `;
 
 const getTopCardProps = (props) => ({
-  imageStyle: {
-    opacity: 0.2,
-    backgroundColor: props.theme.colors.background,
-    transform: [{ scale: 1.05 }],
-  },
+    imageStyle: {
+        opacity: 0.2,
+        backgroundColor: props.theme.colors.background,
+        transform: [{ scale: 1.05 }],
+    },
 });
 
 export const Title = styled(Text).attrs({
-  fontSize: "h3",
-  fontWeight: "bold",
+    fontSize: "h3",
+    fontWeight: "bold",
 })`
   color: ${(props) => props.theme.colors.text};
   margin-bottom: 5px;
@@ -38,7 +38,7 @@ export const Description = styled(Text)`
 `;
 
 export const Input = styled.TextInput.attrs({
-  placeholderTextColor: "#bcbcbc",
+    placeholderTextColor: "#bcbcbc",
 })`
   color: ${(props) => props.theme.colors.text};
   font-family: ${(props) => props.theme.typography.fontFamily.regular};
