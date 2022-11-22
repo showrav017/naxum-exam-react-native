@@ -4,14 +4,14 @@
     "slug": "naxum-exam-react-native",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./src/assets/images/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/images/splash.png",
+      "image": "./src/assets/images/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "entryPoint": "./src/App.js",
+    "entryPoint": "./src/App.tsx",
     "updates": {
       "fallbackToCacheTimeout": 0
     },
@@ -23,12 +23,18 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./src/assets/images/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.showrav017.naxumexamreactnative"
     },
     "web": {
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./src/assets/images/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "7b561e9b-119b-4d4a-9962-b3f0e8ec6211"
+      }
     }
   }
 }
